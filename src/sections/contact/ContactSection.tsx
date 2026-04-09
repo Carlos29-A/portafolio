@@ -6,7 +6,7 @@ import { FaEnvelope, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa"
 export const ContactSection = () => {
     return (
         <>
-            <div className="p-10 bg-black flex flex-col gap-10 relative">
+            <div className="p-10 bg-black flex flex-col gap-10 relative" id="contact">
                 <div
                     className="pointer-events-none absolute top-0 left-0 z-1 h-[min(34vh,16rem)] w-[min(52%,24rem)] bg-[radial-gradient(ellipse_110%_95%_at_0%_0%,#000518,rgba(0,5,24,0.72)_36%,rgba(0,5,24,0.32)_52%,transparent_70%)] opacity-90"
                     aria-hidden

@@ -78,7 +78,7 @@ export const ProjectSection = () => {
     }, [])
 
     return (
-        <section className="bg-black p-6 md:p-10 relative flex flex-col gap-8 md:gap-10">
+        <section className="bg-black p-6 md:p-10 relative flex flex-col gap-8 md:gap-10" id="projects">
             <div
                 className="pointer-events-none absolute top-0 left-0 z-1 h-[min(48vh,24rem)] w-[min(72%,36rem)] bg-[radial-gradient(ellipse_115%_100%_at_0%_0%,#004C73,rgba(0,76,115,0.75)_38%,rgba(0,76,115,0.35)_54%,transparent_74%)] opacity-90"
                 aria-hidden
