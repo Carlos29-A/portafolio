@@ -76,8 +76,8 @@ export const ContactBody = () => {
                         priority={false}
                     />
                 </div>
-                <p className="text-center text-sm font-bold text-[#676767]">Carlos Aguilar Villanueva</p>
-                <p className="text-center text-sm font-bold text-[#676767]">24 años</p>
+                <p className="text-center text-sm font-bold text-gray-200">Carlos Aguilar Villanueva</p>
+                <p className="text-center text-sm font-bold text-gray-200">24 años</p>
             </motion.div>
 
             <motion.div variants={columnVariants} className="space-y-4 text-[#676767]">
@@ -99,13 +99,13 @@ export const ContactBody = () => {
                 <motion.div variants={thankYouContainerVariants} className="space-y-4">
                     <motion.h3
                         variants={thankYouLineVariants}
-                        className="text-4xl font-bold uppercase scale-y-150"
+                        className="text-4xl font-bold uppercase scale-y-150 text-gray-300"
                     >
                         Gracias por visitar
                     </motion.h3>
                     <motion.h3
                         variants={thankYouLineVariants}
-                        className="text-4xl font-bold uppercase scale-y-150"
+                        className="text-4xl font-bold uppercase scale-y-150 text-gray-300"
                     >
                         {new Date().getFullYear()}
                     </motion.h3>

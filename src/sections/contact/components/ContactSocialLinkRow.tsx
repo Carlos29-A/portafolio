@@ -25,7 +25,7 @@ export const ContactSocialLinkRow = ({ item }: Props) => {
                 <Icon className="text-2xl text-black" aria-hidden />
             </div>
             <Link
-                className="text-sm font-bold transition-all duration-300 hover:text-white"
+                className="text-sm text-gray-400 font-bold transition-all duration-300 hover:text-white"
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"

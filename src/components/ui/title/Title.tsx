@@ -37,7 +37,7 @@ export const Title = ({ size, text }: Props) => {
     const restSize = getReducedSize(size);
 
     return (
-        <h2 className={`${size} font-bold mb-4 scale-y-150 uppercase`}>
+        <h2 className={`${size} font-bold mb-4 scale-y-150 uppercase text-gray-300`}>
             {firstLetter}
             <span className={restSize}>{restOfText}</span>
         </h2>

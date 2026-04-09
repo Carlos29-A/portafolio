@@ -3,7 +3,7 @@ import Image from "next/image"
 export const AboutSidebar = () => {
     return (
         <section className="flex flex-col items-center justify-start gap-4 md:gap-5">
-            <div className="-mb-1 flex flex-col gap-2 text-center text-[#676767] md:-mb-2">
+            <div className="-mb-1 flex flex-col gap-2 text-center text-gray-300 md:-mb-2">
                 <p className="uppercase text-2xl">Hola, soy</p>
                 <h1 className="text-3xl font-bold transform scale-y-150">Carlos Aguilar Villanueva</h1>
             </div>
