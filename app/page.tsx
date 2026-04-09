@@ -1,4 +1,4 @@
-import { HeroSection, AboutSection, ProjectSection } from "@/src/sections"
+import { HeroSection, AboutSection, ProjectSection, ContactSection } from "@/src/sections"
 
 export default function Home() {
     return (
@@ -6,6 +6,7 @@ export default function Home() {
             <HeroSection />
             <AboutSection />
             <ProjectSection />
+            <ContactSection />
         </div>
     )
 }

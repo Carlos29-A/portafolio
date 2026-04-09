@@ -80,10 +80,14 @@ export const ProjectSection = () => {
     return (
         <section className="bg-black p-6 md:p-10 relative flex flex-col gap-8 md:gap-10">
             <div
+                className="pointer-events-none absolute top-0 left-0 z-1 h-[min(48vh,24rem)] w-[min(72%,36rem)] bg-[radial-gradient(ellipse_115%_100%_at_0%_0%,#004C73,rgba(0,76,115,0.75)_38%,rgba(0,76,115,0.35)_54%,transparent_74%)] opacity-90"
+                aria-hidden
+            />
+            <div
                 className="pointer-events-none absolute inset-y-0 right-0 z-1 w-[min(78%,42rem)] bg-[radial-gradient(ellipse_115%_85%_at_100%_42%,#002238,rgba(0,34,56,0.82)_40%,rgba(0,34,56,0.4)_58%,transparent_75%)] opacity-95"
                 aria-hidden
             />
-            <Navbar active="proyectos" />
+            <Navbar active="proyectos" isLogo={false} />
             <div className="text-center text-[#676767]">
                 <Title
                     size="text-2xl"
