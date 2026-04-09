@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${orbitron.className} h-full antialiased`}>
+    <html lang="es" className={`${orbitron.className} h-full antialiased bg-[linear-gradient(135deg,#0d2b45_0%,#031523_50%,#010c18_100%)]`}>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
