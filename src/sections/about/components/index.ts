@@ -1,6 +1,5 @@
 export * from "./AboutInfo"
 export * from "./AboutSidebar"
-export * from "./AboutNavbar"
 export * from "./Skills"
 export * from "./Education"
 export * from "./Experience"
