@@ -1,6 +1,6 @@
-import { Title } from "@/src/components/ui/title/Title"
+import { Title } from "@/src/components/ui"
 
-export const About = () => {
+export const AboutInfo = () => {
     return (
         <div>
             <Title size="text-2xl" text="about me" />
@@ -11,7 +11,6 @@ export const About = () => {
                     eum provident aut atque molestiae recusandae numquam modi minima, sunt doloribus ipsum.
                 </p>
             </div>
-
         </div>
     )
 }

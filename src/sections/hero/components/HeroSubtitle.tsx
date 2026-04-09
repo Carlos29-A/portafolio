@@ -1,4 +1,4 @@
-export const Subtitle = () => {
+export const HeroSubtitle = () => {
     return (
         <div className="flex items-center gap-2.5">
             <span className="inline-block h-3 w-3 shrink-0 bg-zinc-300" aria-hidden />

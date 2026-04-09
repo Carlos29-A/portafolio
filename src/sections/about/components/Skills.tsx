@@ -1,8 +1,8 @@
-import { Title } from "@/src/components/ui/title/Title";
+import { Title } from "@/src/components/ui"
+
+const skills = ["Next.js", "Node.js", "Supabase", "FastAPI"]
 
 export const Skills = () => {
-
-    const skills = ["Next.js", "Node.js", "Supabase", "FastAPI"];
     return (
         <div>
             <Title size="text-2xl" text="software skills" />

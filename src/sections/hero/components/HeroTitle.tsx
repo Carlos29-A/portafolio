@@ -1,6 +1,6 @@
 import { bebasNeue, bungee } from "@/src/styles/font"
 
-export const Title = () => {
+export const HeroTitle = () => {
     return (
         <div className="inline-flex items-baseline gap-14 leading-none transform-[scaleY(1.2)] origin-[center_bottom]">
             <h1

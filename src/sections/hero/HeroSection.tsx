@@ -1,10 +1,7 @@
-import { Logo } from "../logo/Logo"
-import { Menu } from "../menu/Menu"
-import { ProfileImage } from "../profile-image/ProfileImage"
-import { Subtitle } from "../subtitle/Subtitle"
-import { Title } from "../title/Title"
+import { Logo } from "@/src/components/Logo"
+import { HeroImage, HeroMenu, HeroSubtitle, HeroTitle } from "./components"
 
-export const Hero = () => {
+export const HeroSection = () => {
     return (
         <section className="relative flex min-h-[min(72dvh,44rem)] w-full flex-col overflow-x-clip bg-zinc-950">
             <div className="absolute left-0 top-0 z-20 p-4 md:p-6">
@@ -21,22 +18,19 @@ export const Hero = () => {
             />
 
             <div className="relative z-10 flex min-h-0 w-full flex-1 flex-col items-center justify-center gap-5 px-6 pb-10 pt-22 md:px-10 md:pb-14 md:pt-28 mt-35">
-
-                {/* Fila: imagen (cuadro rojo detrás) + título */}
                 <div className="relative max-w-7xl flex w-full items-center gap-10 md:gap-14">
                     <div
                         className="pointer-events-none absolute inset-y-0 left-[calc(50%-50vw)] z-0 w-[min(40vw,22rem)] rounded-r-md bg-[#9b0f1f]"
                         aria-hidden
                     />
                     <div className="relative z-10 ml-16 shrink-0 md:ml-24">
-                        <ProfileImage />
+                        <HeroImage />
                     </div>
-                    <Title />
+                    <HeroTitle />
                 </div>
 
-                {/* Subtitle y menú centrados debajo */}
-                <Subtitle />
-                <Menu />
+                <HeroSubtitle />
+                <HeroMenu />
             </div>
         </section>
     )

@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export const ProfileImage = () => {
+export const HeroImage = () => {
     return (
         <div className="relative size-56 shrink-0 overflow-hidden rounded-full sm:size-60 md:size-64">
             <Image
