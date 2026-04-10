@@ -5,7 +5,7 @@ export const AboutSidebar = () => {
         <section className="flex flex-col items-center justify-start gap-4 md:gap-5">
             <div className="-mb-1 flex flex-col gap-1.5 text-center text-gray-300 sm:gap-2 md:-mb-2">
                 <p className="text-lg uppercase sm:text-xl md:text-2xl">Hola, soy</p>
-                <h1 className="text-2xl font-bold [transform:scaleY(1.35)] sm:text-3xl sm:[transform:scaleY(1.45)] md:[transform:scaleY(1.5)]">
+                <h1 className="text-2xl font-bold transform-[scaleY(1.35)] sm:text-3xl sm:transform-[scaleY(1.45)] md:transform-[scaleY(1.5)]">
                     Carlos Aguilar Villanueva
                 </h1>
             </div>

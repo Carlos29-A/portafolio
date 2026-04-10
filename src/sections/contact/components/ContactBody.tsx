@@ -99,13 +99,13 @@ export const ContactBody = () => {
                 <motion.div variants={thankYouContainerVariants} className="space-y-2 sm:space-y-4">
                     <motion.h3
                         variants={thankYouLineVariants}
-                        className="text-2xl font-bold uppercase text-gray-300 [transform:scaleY(1.35)] sm:text-3xl sm:[transform:scaleY(1.45)] md:text-4xl md:[transform:scaleY(1.5)]"
+                        className="text-2xl font-bold uppercase text-gray-300 transform-[scaleY(1.35)] sm:text-3xl sm:transform-[scaleY(1.45)] md:text-4xl md:transform-[scaleY(1.5)]"
                     >
                         Gracias por visitar
                     </motion.h3>
                     <motion.h3
                         variants={thankYouLineVariants}
-                        className="text-2xl font-bold uppercase text-gray-300 [transform:scaleY(1.35)] sm:text-3xl sm:[transform:scaleY(1.45)] md:text-4xl md:[transform:scaleY(1.5)]"
+                        className="text-2xl font-bold uppercase text-gray-300 transform-[scaleY(1.35)] sm:text-3xl sm:transform-[scaleY(1.45)] md:text-4xl md:transform-[scaleY(1.5)]"
                     >
                         {new Date().getFullYear()}
                     </motion.h3>
