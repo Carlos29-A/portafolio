@@ -10,7 +10,12 @@ export type SocialLinkItem = {
 
 export const CONTACT_SOCIAL_LINKS: SocialLinkItem[] = [
     { id: "linkedin", href: "#", label: "carlosaguilarvillanueva", Icon: FaLinkedinIn },
-    { id: "github", href: "#", label: "caguilarvillanueva", Icon: FaGithub },
+    { id: "github", href: "https://github.com/Carlos29-A", label: "Carlos29-A", Icon: FaGithub },
     { id: "instagram", href: "#", label: "carlosaguilarvillanueva", Icon: FaInstagram },
-    { id: "email", href: "#", label: "carlosaguilarvillanueva@gmail.com", Icon: FaEnvelope },
+    {
+        id: "email",
+        href: "mailto:caguilarvillanueva68@gmail.com",
+        label: "caguilarvillanueva68@gmail.com",
+        Icon: FaEnvelope,
+    },
 ]

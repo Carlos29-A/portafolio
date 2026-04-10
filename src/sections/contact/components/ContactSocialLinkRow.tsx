@@ -17,21 +17,32 @@ type Props = {
     item: SocialLinkItem
 }
 
+const linkClass =
+    "text-sm text-gray-400 font-bold transition-all duration-300 hover:text-white"
+
 export const ContactSocialLinkRow = ({ item }: Props) => {
     const { href, label, Icon } = item
+    const isMailto = href.startsWith("mailto:")
+
     return (
         <motion.div variants={rowVariants} className="flex w-full items-center justify-start gap-3 sm:justify-center sm:gap-2">
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white">
                 <Icon className="text-2xl text-black" aria-hidden />
             </div>
-            <Link
-                className="text-sm text-gray-400 font-bold transition-all duration-300 hover:text-white"
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                {label}
-            </Link>
+            {isMailto ? (
+                <a href={href} className={linkClass}>
+                    {label}
+                </a>
+            ) : (
+                <Link
+                    className={linkClass}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {label}
+                </Link>
+            )}
         </motion.div>
     )
 }
