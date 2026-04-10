@@ -25,8 +25,8 @@ export const AboutInfo = () => {
             className="flex flex-col gap-2"
         >
             <Title size="text-2xl" text="Sobre mí" />
-            <div className="p-5">
-                <p className="text-gray-400 uppercase text-sm">
+            <div className="p-3 sm:p-5">
+                <p className="text-xs uppercase leading-relaxed text-gray-400 sm:text-sm">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Commodi odit iure reprehenderit dolor nisi, totam nihil voluptate excepturi,
                     eum provident aut atque molestiae recusandae numquam modi minima, sunt doloribus ipsum.

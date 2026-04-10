@@ -25,17 +25,17 @@ export const HeroTitle = () => {
             variants={titleContainer}
             initial="hidden"
             animate="show"
-            className="inline-flex items-baseline gap-14 leading-none transform-[scaleY(1.2)] origin-[center_bottom]"
+            className="flex flex-col items-center gap-2 text-center origin-[center_bottom] transform-[scaleY(1.15)] md:inline-flex md:flex-row md:items-baseline md:gap-14 md:text-left md:leading-none md:transform-[scaleY(1.2)]"
         >
             <motion.h1
                 variants={titleItem}
-                className={`${bungee.className} text-8xl font-bold -tracking-wide leading-none text-white`}
+                className={`${bungee.className} text-5xl font-bold -tracking-wide leading-none text-white md:text-8xl`}
             >
-                P<span className="text-7xl -tracking-wider">ortafolio</span>
+                P<span className="text-4xl -tracking-wider md:text-7xl">ortafolio</span>
             </motion.h1>
             <motion.h2
                 variants={titleItem}
-                className={`${bebasNeue.className} -translate-y-2 text-5xl font-bold leading-none tabular-nums text-white`}
+                className={`${bebasNeue.className} text-4xl font-bold leading-none tabular-nums text-white md:-translate-y-2 md:text-5xl`}
             >
                 {new Date().getFullYear()}
             </motion.h2>

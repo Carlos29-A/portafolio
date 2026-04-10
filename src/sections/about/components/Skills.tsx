@@ -60,7 +60,7 @@ export const Skills = () => {
                 <Title size="text-2xl" text="Tecnologías que he utilizado" />
             </motion.div>
             <motion.div
-                className="mt-10 flex flex-wrap gap-4"
+                className="mt-6 flex flex-wrap gap-3 sm:mt-10 sm:gap-4"
                 variants={rowVariants}
             >
                 {skills.map((skill) => (

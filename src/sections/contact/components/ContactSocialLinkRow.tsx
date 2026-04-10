@@ -20,7 +20,7 @@ type Props = {
 export const ContactSocialLinkRow = ({ item }: Props) => {
     const { href, label, Icon } = item
     return (
-        <motion.div variants={rowVariants} className="flex items-center justify-center gap-2">
+        <motion.div variants={rowVariants} className="flex w-full items-center justify-start gap-3 sm:justify-center sm:gap-2">
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white">
                 <Icon className="text-2xl text-black" aria-hidden />
             </div>

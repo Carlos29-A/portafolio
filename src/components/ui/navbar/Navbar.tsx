@@ -11,31 +11,29 @@ interface Props {
 
 
 export const Navbar = ({ active, isLogo = true }: Props) => {
+    const linkClass = (key: "perfil" | "proyectos" | "contacto") =>
+        `rounded-full px-3 py-1.5 text-xs font-bold text-white transition-all duration-300 hover:text-white sm:px-4 sm:py-2 sm:text-sm ${
+            active === key ? "bg-[#BBD5EC]/80" : "hover:underline"
+        }`
+
     return (
-        <div className="flex items-center justify-center gap-8 relative">
-            <Link
-                href="#"
-                onClick={() => scrollToSection("about")}
-                className={`text-sm text-white font-bold hover:text-white px-4 py-2 rounded-full  transition-all duration-300 ${active === "perfil" ? "bg-[#BBD5EC]/80" : "hover:underline"}`}>
-                Perfil
-            </Link>
-            <Link
-                href="#"
-                onClick={() => scrollToSection("projects")}
-                className={`text-sm text-white font-bold hover:text-white px-4 py-2 rounded-full  transition-all duration-300 ${active === "proyectos" ? "bg-[#BBD5EC]/80" : "hover:underline"}`}>
-                Proyectos
-            </Link>
-            <Link
-                href="#"
-                onClick={() => scrollToSection("contact")}
-                className={`text-sm text-white font-bold hover:text-white px-4 py-2 rounded-full  transition-all duration-300 ${active === "contacto" ? "bg-[#BBD5EC]/80" : "hover:underline"}`}>
-                Contacto
-            </Link>
+        <nav className="relative flex w-full flex-col items-center gap-4 sm:gap-5 md:block">
             {isLogo && (
-                <div className="absolute left-0 top-0">
+                <div className="flex justify-center md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
                     <Logo />
                 </div>
             )}
-        </div>
+            <div className="flex w-full max-w-md flex-wrap items-center justify-center gap-2 sm:max-w-none sm:gap-3 md:gap-8">
+                <Link href="#" onClick={() => scrollToSection("about")} className={linkClass("perfil")}>
+                    Perfil
+                </Link>
+                <Link href="#" onClick={() => scrollToSection("projects")} className={linkClass("proyectos")}>
+                    Proyectos
+                </Link>
+                <Link href="#" onClick={() => scrollToSection("contact")} className={linkClass("contacto")}>
+                    Contacto
+                </Link>
+            </div>
+        </nav>
     )
 }

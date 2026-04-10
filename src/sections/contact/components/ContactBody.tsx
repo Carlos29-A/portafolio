@@ -52,7 +52,7 @@ export const ContactBody = () => {
     return (
         <motion.div
             ref={ref}
-            className="relative z-10 flex flex-wrap justify-center gap-12 lg:gap-20"
+            className="relative z-10 flex flex-col items-center gap-10 sm:flex-row sm:flex-wrap sm:justify-center md:gap-12 lg:gap-20"
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={{
@@ -66,13 +66,13 @@ export const ContactBody = () => {
                 variants={columnVariants}
                 className="flex flex-col items-center justify-center gap-2"
             >
-                <div className="overflow-hidden rounded-4xl">
+                <div className="w-full max-w-[min(100%,18rem)] overflow-hidden rounded-3xl sm:max-w-[20rem] sm:rounded-4xl">
                     <Image
                         src="/favicon.ico"
                         alt="Carlos Aguilar Villanueva"
                         width={400}
                         height={400}
-                        className="rounded-4xl object-cover"
+                        className="h-auto w-full rounded-3xl object-cover sm:rounded-4xl"
                         priority={false}
                     />
                 </div>
@@ -80,11 +80,11 @@ export const ContactBody = () => {
                 <p className="text-center text-sm font-bold text-gray-200">24 años</p>
             </motion.div>
 
-            <motion.div variants={columnVariants} className="space-y-4 text-[#676767]">
+            <motion.div variants={columnVariants} className="w-full max-w-md space-y-3 text-[#676767] sm:space-y-4">
                 <Title size="text-2xl" text="Contactame" />
                 <motion.div
                     variants={socialListVariants}
-                    className="mt-10 flex flex-col gap-5"
+                    className="mt-6 flex flex-col gap-4 sm:mt-10 sm:gap-5"
                 >
                     {CONTACT_SOCIAL_LINKS.map((item) => (
                         <ContactSocialLinkRow key={item.id} item={item} />
@@ -94,18 +94,18 @@ export const ContactBody = () => {
 
             <motion.div
                 variants={columnVariants}
-                className="space-y-4 text-center text-[#676767] flex flex-col items-center justify-center"
+                className="flex w-full max-w-md flex-col items-center justify-center space-y-3 text-center text-[#676767] sm:space-y-4"
             >
-                <motion.div variants={thankYouContainerVariants} className="space-y-4">
+                <motion.div variants={thankYouContainerVariants} className="space-y-2 sm:space-y-4">
                     <motion.h3
                         variants={thankYouLineVariants}
-                        className="text-4xl font-bold uppercase scale-y-150 text-gray-300"
+                        className="text-2xl font-bold uppercase text-gray-300 [transform:scaleY(1.35)] sm:text-3xl sm:[transform:scaleY(1.45)] md:text-4xl md:[transform:scaleY(1.5)]"
                     >
                         Gracias por visitar
                     </motion.h3>
                     <motion.h3
                         variants={thankYouLineVariants}
-                        className="text-4xl font-bold uppercase scale-y-150 text-gray-300"
+                        className="text-2xl font-bold uppercase text-gray-300 [transform:scaleY(1.35)] sm:text-3xl sm:[transform:scaleY(1.45)] md:text-4xl md:[transform:scaleY(1.5)]"
                     >
                         {new Date().getFullYear()}
                     </motion.h3>

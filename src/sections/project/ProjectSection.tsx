@@ -68,7 +68,7 @@ export const ProjectSection = () => {
             animation: "spring",
             swapMode: "drop",
             dragOnHold: false,
-            autoScrollOnDrag: true,
+            autoScrollOnDrag: false,
         })
 
         return () => {
@@ -78,7 +78,7 @@ export const ProjectSection = () => {
     }, [])
 
     return (
-        <section className="bg-black p-6 md:p-10 relative flex flex-col gap-8 md:gap-10" id="projects">
+        <section className="relative flex flex-col gap-6 bg-black px-4 py-8 sm:gap-8 sm:p-6 md:gap-10 md:p-10" id="projects">
             <div
                 className="pointer-events-none absolute top-0 left-0 z-1 h-[min(48vh,24rem)] w-[min(72%,36rem)] bg-[radial-gradient(ellipse_115%_100%_at_0%_0%,#004C73,rgba(0,76,115,0.75)_38%,rgba(0,76,115,0.35)_54%,transparent_74%)] opacity-90"
                 aria-hidden
@@ -97,7 +97,7 @@ export const ProjectSection = () => {
 
             <div
                 ref={containerRef}
-                className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-12 auto-rows-[5.75rem] gap-3 md:auto-rows-[6.5rem] md:gap-4"
+                className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-12 auto-rows-[6.25rem] gap-2.5 sm:auto-rows-[6rem] sm:gap-3 md:auto-rows-[6.5rem] md:gap-4"
             >
                 {PROJECTS.map((project) => (
                     <ProjectCard key={project.id} project={project} />

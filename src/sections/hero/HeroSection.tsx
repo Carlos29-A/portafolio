@@ -3,8 +3,8 @@ import { HeroImage, HeroMenu, HeroSubtitle, HeroTitle } from "./components"
 
 export const HeroSection = () => {
     return (
-        <section className="relative flex min-h-[min(72dvh,44rem)] w-full flex-col overflow-x-clip bg-zinc-950">
-            <div className="absolute left-0 top-0 z-20 p-4 md:p-6">
+        <section className="relative flex min-h-[min(88dvh,38rem)] w-full flex-col overflow-x-clip bg-zinc-950 md:min-h-[min(72dvh,44rem)]">
+            <div className="absolute left-0 top-0 z-20 p-3 sm:p-4 md:p-6">
                 <Logo />
             </div>
 
@@ -17,16 +17,18 @@ export const HeroSection = () => {
                 aria-hidden
             />
 
-            <div className="relative z-10 flex min-h-0 w-full flex-1 flex-col items-center justify-center gap-5 px-6 pb-10 pt-22 md:px-10 md:pb-14 md:pt-28 mt-35">
-                <div className="relative max-w-7xl flex w-full items-center gap-10 md:gap-14">
+            <div className="relative z-10 mt-35 flex min-h-0 w-full flex-1 flex-col items-center justify-center gap-5 px-6 pb-10 pt-22 max-md:gap-7 max-md:px-4 max-md:pb-8 max-md:pt-20 md:px-10 md:pb-14 md:pt-28">
+                <div className="relative flex w-full max-w-7xl flex-col items-center gap-8 md:flex-row md:items-center md:gap-14">
                     <div
-                        className="pointer-events-none absolute inset-y-0 left-[calc(50%-50vw)] z-0 w-[min(40vw,22rem)] rounded-r-md bg-[#9b0f1f]"
+                        className="pointer-events-none absolute inset-y-0 left-[calc(50%-50vw)] z-0 hidden w-[min(40vw,22rem)] rounded-r-md bg-[#9b0f1f] md:block"
                         aria-hidden
                     />
-                    <div className="relative z-10 ml-16 shrink-0 md:ml-24">
+                    <div className="relative z-10 mx-auto shrink-0 md:mx-0 md:ml-24">
                         <HeroImage />
                     </div>
-                    <HeroTitle />
+                    <div className="relative z-10 flex w-full justify-center md:contents">
+                        <HeroTitle />
+                    </div>
                 </div>
 
                 <HeroSubtitle />

@@ -3,7 +3,7 @@ import { Navbar } from "@/src/components/ui"
 
 export const AboutSection = () => {
     return (
-        <div className="p-10 bg-black flex flex-col gap-10" id="about">
+        <div className="flex flex-col gap-6 bg-black px-4 py-8 sm:gap-8 sm:px-6 sm:py-10 md:gap-10 md:p-10" id="about">
             <Navbar active="perfil" />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <AboutSidebar />
