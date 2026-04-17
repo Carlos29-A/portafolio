@@ -6,26 +6,28 @@ import { useEffect, useRef } from "react"
 import { ProjectCard } from "./components"
 
 const PROJECTS = [
+    // Proyecto arte
     {
-        id: "profile-board",
-        name: "UI Profile",
-        category: "branding",
+        id: "proyecto-arte-1",
+        name: "Proyecto Arte-Vivo",
+        category: "web app",
+        description: "Una web para poder publicar mis dibujos que hago en mi tiempo libre y que la gente lo pueda ver y comentar.",
         size: "col-span-12 sm:col-span-6 lg:col-span-3 lg:row-span-4 lg:col-start-1 lg:row-start-1",
-        tone: "from-zinc-700/75 via-zinc-900 to-black",
+        image: "/project/proyectoarte.png",
+        demoUrl: "https://arte-vivo-delta.vercel.app/",
+        repoUrl: "https://github.com/Carlos29-A/Arte-vivo",
+        teach: ["Next.js", "Tailwind CSS", "TypeScript", "Supabase"]
     },
     {
-        id: "shape-kit",
-        name: "Shape Kit",
-        category: "assets",
-        size: "col-span-12 sm:col-span-6 lg:col-span-3 lg:row-span-1 lg:col-start-4 lg:row-start-1",
-        tone: "from-zinc-500/70 via-zinc-800 to-slate-950",
-    },
-    {
-        id: "poster-paper",
-        name: "Poster Paper",
-        category: "editorial",
+        id: "proyecto-arte-2",
+        name: "Proyecto Quiosco",
+        category: "web app",
+        description: "Sistema de pedidos para restaurantes/quioscos desarrollado con Next.js , TypeScript, Prisma y PostgreSQL. Incluye panel de administración y gestión de órdenes en tiempo real.",
         size: "col-span-12 sm:col-span-6 lg:col-span-3 lg:row-span-1 lg:col-start-7 lg:row-start-1",
-        tone: "from-slate-500/70 via-slate-800 to-zinc-950",
+        image: "/project/proyectoquiosco.png",
+        demoUrl: "https://quiosco-next-ruddy.vercel.app/order/cafe",
+        repoUrl: "https://github.com/Carlos29-A/Quiosco-next",
+        teach: ["Next.js", "Tailwind CSS", "TypeScript", "Prisma", "PostgreSQL"]
     },
     {
         id: "void-logo",
