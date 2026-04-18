@@ -8,7 +8,7 @@ import { ProjectCard } from "./components"
 const PROJECTS = [
     // Proyecto arte
     {
-        id: "proyecto-arte-1",
+        id: "proyecto-1",
         name: "Proyecto Arte-Vivo",
         category: "web app",
         description: "Una web para poder publicar mis dibujos que hago en mi tiempo libre y que la gente lo pueda ver y comentar.",
@@ -19,7 +19,7 @@ const PROJECTS = [
         teach: ["Next.js", "Tailwind CSS", "TypeScript", "Supabase"]
     },
     {
-        id: "proyecto-arte-2",
+        id: "proyecto-2",
         name: "Proyecto Quiosco",
         category: "web app",
         description: "Sistema de pedidos para restaurantes/quioscos desarrollado con Next.js , TypeScript, Prisma y PostgreSQL. Incluye panel de administración y gestión de órdenes en tiempo real.",
@@ -30,11 +30,15 @@ const PROJECTS = [
         teach: ["Next.js", "Tailwind CSS", "TypeScript", "Prisma", "PostgreSQL"]
     },
     {
-        id: "void-logo",
-        name: "Void Logo",
-        category: "identity",
+        id: "proyecto-3",
+        name: "Proyecto Tienda Virtual",
+        category: "web app",
+        description: "Es una tienda online llamada Teslo Shop, hecha con Next.js + TypeScript + Tailwind, que muestra productos con animaciones suaves (menú, grid y tarjetas de producto con cambio de imagen al hacer hover).",
         size: "col-span-12 sm:col-span-6 lg:col-span-3 lg:row-span-2 lg:col-start-10 lg:row-start-1",
-        tone: "from-blue-900/70 via-zinc-900 to-black",
+        image: "/project/proyectoTienda.png",
+        demoUrl: "https://teslo-shop-ruby-chi.vercel.app/",
+        repoUrl: "https://github.com/Carlos29-A/Teslo-Shop",
+        teach: ["Next.js", "Tailwind CSS", "TypeScript", "Prisma", "PostgreSQL"],
     },
     {
         id: "storm-scene",
